@@ -20,9 +20,9 @@ function Testimonials() {
 			<div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 sm:gap-16 lg:gap-24">
 				<div className="lg:w-1/2 w-full text-center lg:text-left">
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-						What Our Members Are Saying
+						What our members are saying
 					</h2>
-					<p className="text-gray-300 text-base text-xl sm:text-lg leading-relaxed max-w-2xl mx-auto">
+					<p className="text-gray-700 text-base text-xl sm:text-lg leading-relaxed max-w-2xl mx-auto">
 						Real feedback from our valued members. Join the
 						community and see for yourself!
 					</p>
@@ -32,18 +32,19 @@ function Testimonials() {
 						{testimonials.map((comment, index) => (
 							<div
 								key={index}
-								className="relative bg-slate-900/50 border backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 transition-all duration-300 overflow-visible group flex flex-col h-full border-gray-800 hover:border-gray-600 hover:shadow-md"
+								className="relative bg-slate-200/50 border backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 transition-all duration-300 overflow-visible group flex flex-col h-full border-gray-800 hover:border-gray-600 hover:shadow-md"
 							>
 								<div className="flex flec-cols w-full">
 									<Quote
-										className="text-blue-500 m-1"
+										fill="true"
+										className="text-slate-700 m-1"
 										size={18}
 									/>
 									<div className="text-left ">
-										<p className="text-gray-300 text-base text-xl sm:text-lg leading-relaxed mb-4 sm:mb-6">
+										<p className="text-gray-700 text-base text-xl sm:text-lg leading-relaxed mb-4 sm:mb-6">
 											{comment.review}
 										</p>
-										<h3 className="text-1xl sm:text-2xl lg:text-3xl font-bold  text-white">
+										<h3 className="text-1xl sm:text-2xl lg:text-3xl font-bold text-black">
 											{comment.name}
 										</h3>
 									</div>

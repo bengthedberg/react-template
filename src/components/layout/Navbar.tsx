@@ -13,11 +13,11 @@ function Navbar() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	return (
-		<nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-950/20 backdrop-blur-sm">
+		<nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-950/85 backdrop-blur-xs">
 			{/* fixed navbar position at top, taking up the whole width with backdrop blur effect */}
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* Container to center navbar content */}
-				<div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
+				<div className="flex items-center justify-between h-14 sm:h-16 lg:h-18">
 					{/* Navbar content goes here */}
 					<div className="flex items-center space-x-1 group cursor-pointer">
 						<div>
@@ -27,14 +27,6 @@ function Navbar() {
 								className="w-42 sm:h-48 md:h-60 h-14 sm:h-16 md:h-20 inline-block mr-2"
 							/>
 						</div>
-						<span>
-							<span className="text-gray-400 text-lg sm:text-1xl md:text-2xl font-light italic">
-								the
-							</span>
-							<span className="text-white text-xl sm:text-2xl md:text-3xl font-medium">
-								Club
-							</span>
-						</span>
 					</div>
 					<div className="flex item-center space-x-6 lg:space-x-8 hidden md:block">
 						{MENU_ITEMS.map((item) => (
